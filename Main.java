@@ -1,6 +1,8 @@
+import java.util.Scanner;
+
 /**
- *
- * @author 
+ * Counts up to a given number
+ * @author Rose
  */
 public class Main {
 
@@ -9,7 +11,21 @@ public class Main {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    // TODO code application logic here
+    // create a scanner for user input
+    Scanner input = new Scanner(System.in);
+
+    //ask user for a positive integer
+    System.out.println("Please enter a positive integer");
+
+    //declare a variable for user input
+    int userNum = input.nextInt();
+
+    //create a for loop and declare a variable to count up from 
+    for(int count = 1; count <= userNum; count++){
+      
+      //print out the numbers
+      System.out.print(count + ", ");
+    }
     
   }
 }
